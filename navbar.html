@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav elements</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header-fixed w-full border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <i class="fas fa-file-invoice text-blue-600 text-2xl mr-3"></i>
+                    <h1 class="text-xl font-semibold text-gray-800 whitespace-nowrap shrink-0">Salasar Paper Converter</h1>
+                </div>
+                <nav class="desktop-nav flex items-center space-x-2 ml-8">
+                    <a href="index.html" class="nav-link font-medium">Dashboard</a>
+                    <a href="inward.html" class="nav-link font-medium">Inward</a>
+                    <a href="cutting.html" class="nav-link font-medium">Cutting</a>
+                    <a href="wrapping.html" class="nav-link font-medium">Wrapping</a>
+                    <a href="warehousing.html" class="nav-link font-medium">Sifting/Staging</a>
+                    <a href="compliance.html" class="nav-link font-medium">Breakdown</a>
+                    <a href="accounts.html" class="nav-link font-medium">Accounts</a>
+                </nav>
+
+                <div class="flex items-center space-x-4">
+                    <button class="mobile-menu-button text-gray-500 hover:text-gray-700 md:hidden">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+
+                    <div class="relative">
+                        <button id="notificationBtn" class="text-gray-500 hover:text-gray-700">
+                            <i class="fas fa-bell"></i>
+                        </button>
+                        <span class="absolute top-0 right-0 h-2 w-2 rounded-full bg-red-500"></span>
+                    </div>
+                    <div class="relative">
+                        <button id="userMenuBtn" class="flex items-center space-x-2 text-gray-700 hover:text-gray-900">
+                            <span class="hidden md:block font-medium">Admin</span>
+                            <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <div id="userMenu" class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-20 hidden">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Profile</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Settings</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sign out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-menu md:hidden">
+        <a href="index.html" class="mobile-nav-link block px-4 py-2 text-gray-700 hover:bg-gray-100">Dashboard</a>
+        <a href="inward.html" class="mobile-nav-link block px-4 py-2 text-gray-700 hover:bg-gray-100">Inward</a>
+        <a href="cutting.html" class="mobile-nav-link block px-4 py-2 text-gray-700 hover:bg-gray-100">Cutting</a>
+        <a href="wrapping.html" class="mobile-nav-link block px-4 py-2 text-gray-700 hover:bg-gray-100">Wrapping</a>
+        <a href="warehousing.html" class="mobile-nav-link block px-4 py-2 text-gray-700 hover:bg-gray-100">Sifting/Staging</a>
+        <a href="compliance.html" class="mobile-nav-link block px-4 py-2 text-gray-700 hover:bg-gray-100">Breakdown</a>
+        <a href="accounts.html" class="mobile-nav-link block px-4 py-2 text-gray-700 hover:bg-gray-100">Accounts</a>
+    </div>
+</body>
+</html>

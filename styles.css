@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+    body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f8fafc;
+        padding-top: 72px; /* Adjusted to account for fixed header height */
+    }
+
+    /* Mobile Menu Styles */
+    .mobile-menu {
+        position: fixed;
+        top: 75px; /* Adjusted to be below the header */
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 72px); /* Adjusted height */
+        background-color: white;
+        transition: left 0.3s ease;
+        z-index: 999;
+        overflow-y: auto;
+    }
+
+    .mobile-menu.active {
+        left: 0;
+    }
+
+    .mobile-nav-link {
+        display: block;
+        padding: 0.75rem 1rem;
+        color: #4b5563; /* gray-700 */
+        font-weight: 500;
+        border-bottom: 1px solid #e5e7eb; /* gray-200 */
+        transition: background-color 0.2s ease;
+    }
+
+    .mobile-nav-link:hover {
+        background-color: #f3f4f6; /* gray-100 */
+    }
+
+    .mobile-nav-link.active {
+        color: #2563eb; /* blue-600 */
+        background-color: #eff6ff; /* blue-50 */
+    }
+
+    /* Header Shadow on Scroll */
+    .header-fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background-color: white;
+    }
+
+    .shadow-scroll {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Desktop Navigation Links */
+    .nav-link {
+        padding: 0.5rem 0.75rem;
+        border-radius: 0.375rem; /* rounded-md */
+        color: #4b5563; /* gray-700 */
+        transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    .nav-link:hover {
+        background-color: #f3f4f6; /* gray-100 */
+        color: #1f2937; /* gray-900 */
+    }
+
+    .nav-link.active {
+        background-color: #e0f2fe; /* blue-50 */
+        color: #2563eb; /* blue-600 */
+        font-weight: 600; /* font-semibold */
+    }
+
+    /* Module Cards on Dashboard */
+    .module-card {
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .module-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .module-card .icon-container {
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .module-card:hover .icon-container {
+        transform: scale(1.1);
+    }
